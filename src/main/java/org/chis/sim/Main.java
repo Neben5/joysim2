@@ -50,6 +50,7 @@ public class Main {
         private boolean exit;
         Thread t;
         UserCodeThread() {
+            System.out.println(this.getClass().getName());
             t = new Thread(this, "usercode");
             System.out.println("New Thread: " + t);
             exit = false;
@@ -81,3 +82,4 @@ public class Main {
     
 
 }
+//TODO Arrow controls, add subsystems, etc
